@@ -50,7 +50,7 @@ with open(filename, "r", newline="", encoding="ISO-8859-1") as file:
         
 
 with open(targetname, "w+", newline="", encoding="ISO-8859-1") as file:
-    writer = csv.writer(file, delimiter=";")
+    writer = csv.writer(file, delimiter=",")
     writer.writerow(['text'] + kategorilist)
     for row in rows:
         writer.writerow(row)
