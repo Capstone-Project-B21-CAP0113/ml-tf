@@ -16,7 +16,7 @@
 # [START gae_python3_render_template]
 import datetime
 
-from flask import Flask, request, jsonify, abort
+from flask import Flask, request, jsonify, abort, render_template
 from keras_preprocessing.text import tokenizer_from_json
 
 import tensorflow as tf
@@ -89,6 +89,12 @@ def infer():
     res = dict(zip(label_list, ["{:.5f}".format(i) for i in prediction[0]]))
 
     return jsonify(res), 200
+
+
+@app.route('/')
+def root():
+
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
