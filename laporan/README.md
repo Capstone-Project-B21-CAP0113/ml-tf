@@ -8,6 +8,9 @@ Tokenizer used is available as `tokenizer.json`
 
 There are various CSV files in this folder. The details are as follows.
 
+We referenced this paper for this project:
+https://www.researchgate.net/publication/340961588_Multilabel_Text_Classification_in_News_Articles_Using_Long-Term_Memory_with_Word2Vec
+
 ## Running the notebook
 You can run individual cell to train the notebook. All dependencies needed is installed when running the first cell.
 
